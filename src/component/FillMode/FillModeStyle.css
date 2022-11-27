@@ -1,0 +1,125 @@
+.FormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 4em auto 1em;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.SurveyDetails {
+    background: white;
+    overflow: hidden;
+    width: 80%;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    padding: 3em
+}
+
+.FillTitle {
+    padding: 0;
+    margin: 0;
+}
+
+.FillDescription {
+    padding-top: 1.5em;
+    min-width: 300px;
+    margin: 0;
+    font-size: large;
+}
+
+.FillForm {
+    background: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    padding: 2.5em;
+    margin-top: 2em;
+}
+
+.Question {
+    margin: 0;
+}
+
+.AnswersContainer {
+    padding-top: 1em;
+}
+
+.RadioButton {
+    margin: 0 1em;
+}
+
+.Answer{
+    font-size: large;
+}
+
+.Buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    margin: 2em auto 2em;
+    max-width: 18em;
+}
+
+.BackBtn {
+    margin: 1rem 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.DoneBtn {
+    margin: 1rem 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #FFBB33;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.DoneBtn:hover {
+    box-shadow: 4px 4px 5px -2px rgba(255, 187, 51, .8);
+}
+
+.DoneBtn:active {
+    box-shadow: none;
+}
+
+.BackBtn:hover {
+    background-color: rgba(255, 187, 51, .4);
+    border-radius: 10px;
+}
+
+.BackBtn:active {
+    background-color: rgba(255, 187, 51, .6);
+    border-radius: 10px;
+}
+
+@media (max-width: 304px) {
+    .DoneBtn {
+        order: 1
+    }
+    .BackBtn {
+        order: 2;
+        margin-top: 0;
+        padding: 0 2rem;
+    }
+}
+
+.ProgressBar {
+    margin-top: 10em;
+}
+

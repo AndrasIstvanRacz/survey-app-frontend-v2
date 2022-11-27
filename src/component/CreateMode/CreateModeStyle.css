@@ -1,0 +1,214 @@
+.FormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 4em auto 1em;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.SurveyDetails {
+    background: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    padding: 3em
+}
+
+.NewTitle {
+    margin-right: auto;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.NewTitle:focus {
+    outline: none;
+    border: none;
+    border-bottom: thin solid black;
+}
+
+.NewDescription {
+    width: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.17rem;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.NewDescription:focus {
+    outline: none;
+    border: none;
+    border-bottom: thin solid black;
+}
+
+.QuestionContainer {
+    margin: 10px;
+    width: 98%;
+    max-width: 1500px;
+    overflow: hidden;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.NewQuestion {
+    width: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.Delete {
+    display: block;
+    margin: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.7em;
+    cursor: pointer;
+    user-select: none;
+    background: #FFBB33;
+    border-radius: 10px;
+}
+
+.Delete:hover{
+    box-shadow: 4px 4px 5px -2px rgba(255, 187, 51, .8);
+    border-radius: 10px;
+}
+
+.Delete:active {
+    box-shadow: none;
+}
+
+
+.AnswersContainer {
+    margin-left: 20px;
+    width: 98%;
+    overflow: hidden;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.NewAnswer {
+    width: 50%;
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 18px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.AddAnswer {
+    width: 1em;
+    padding: 10px;
+    margin-top: 1em;
+    background: #FFBB33;
+    border-radius: 10px;
+    margin-left: .8em;
+}
+
+.AddAnswer:hover{
+    box-shadow: 4px 4px 5px -2px rgba(255, 187, 51, .8);
+    border-radius: 10px;
+}
+
+.AddAnswer:active {
+    box-shadow: none;
+}
+
+.FillForm {
+    background: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    padding: 2.5em;
+    margin-top: 2em;
+}
+
+.AddQuestion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    height: 1.5em;
+    margin: 1em auto auto;
+    padding: 1em;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+}
+
+
+.AddQuestion:hover{
+    box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+.AddQuestion:active {
+    box-shadow: none;
+}
+
+.BackBtn {
+    margin: 1rem 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.DoneBtn {
+    margin: 1rem 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #FFBB33;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.DoneBtn:hover {
+    box-shadow: 4px 4px 5px -2px rgba(255, 187, 51, .8);
+}
+
+.DoneBtn:active {
+    box-shadow: none;
+}
+
+.BackBtn:hover {
+    background-color: rgba(255, 187, 51, .4);
+    border-radius: 10px;
+}
+
+.BackBtn:active {
+    background-color: rgba(255, 187, 51, .6);
+    border-radius: 10px;
+}
+
+@media (max-width: 304px) {
+    .DoneBtn {
+        order: 1
+    }
+    .BackBtn {
+        order: 2;
+        margin-top: 0;
+        padding: 0 2rem;
+    }
+}

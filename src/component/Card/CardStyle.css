@@ -1,0 +1,47 @@
+.SurveyCard {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.SurveyCard:hover{
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0,.7);
+}
+
+.SurveyCard:active{
+    box-shadow: none;
+}
+
+.SurveyTitle {
+    word-break: break-all;
+    overflow: hidden;
+    padding-bottom: 5px;
+    margin:0 auto;
+    max-height: 60px;
+}
+
+.SurveyCreator {
+    margin:0 auto;
+    font-weight: bold;
+}
+
+.Description {
+    margin:0 auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.SurveyDescription {
+    word-break: break-all;
+    overflow: hidden;
+    margin:0 auto;
+}

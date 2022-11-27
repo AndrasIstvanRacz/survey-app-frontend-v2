@@ -1,0 +1,71 @@
+.LoginForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5em;
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+}
+
+.Title {
+    justify-content: center;
+    margin: 1em auto;
+    font-size: 40px;
+}
+
+.TextField {
+    margin-bottom: 2em;
+    width: 50%;
+    height: 2em;
+    font-size: medium;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    outline: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.TextField:focus {
+    border: none;
+    border-bottom: 1px solid #FFBB33 ;
+    border-radius: 0;
+}
+
+.SubmitButton {
+    margin: 1em auto;
+    width: 25%;
+    height: 2.5em;
+    border: none;
+    border-radius: 8px;
+    background: #FFBB33;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.SubmitButton:hover {
+    box-shadow: 4px 4px 5px -2px rgba(255, 187, 51, .8);
+}
+
+.SubmitButton:active {
+    box-shadow: none;
+}
+
+.SignUpLink {
+    justify-content: center;
+    margin: .5em auto 1em;
+}
+
+.LogInError {
+    margin: auto;
+    color: crimson;
+}
+

@@ -1,0 +1,42 @@
+.StatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 4em auto 1em;
+    max-width: 1300px;
+    width: 80%;
+}
+
+.StatDetails {
+    width: 100%;
+    background: white;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+}
+
+.StatTitle{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.StatDescription {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.ShareLink {
+    margin-left: 50px;
+    color: black;
+}
+
+.ChartContainer {
+    background: white;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,.25);
+    border-radius: 20px;
+    margin-top: 2em;
+    padding: 2.5em;
+    overflow: hidden;
+}

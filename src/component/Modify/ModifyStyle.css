@@ -1,0 +1,37 @@
+.CreateNewSurveyLink {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    background-color: white;
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0,.5);
+    width: 80%;
+    max-width: 1300px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.CreateNewSurveyLink:hover {
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0, .8);
+    border-radius: 10px;
+}
+
+.CreateNewSurveyLink:active {
+    box-shadow: none;
+}
+
+.SurveyLineContainer {
+    margin: 4em auto 2em;
+    width: 95%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,66 @@
+.Container {
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar {
+    margin: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 5px -1px rgba(0,0,0,.5);
+    width: 98%;
+    max-width: 1500px;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    border-radius: 10px;
+}
+
+.Title {
+    font-size: 1.5rem;
+    margin: 0.75rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.Logo {
+    padding-right: .5rem;
+}
+
+.NavbarLink {
+    display: block;
+    margin: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.7em;
+}
+
+.NavbarLink:hover{
+    background-color: rgba(255, 187, 51, .4);
+    border-radius: 10px;
+}
+
+.NavbarLink:active {
+    background-color: rgba(255, 187, 51, .6);
+    border-radius: 10px;
+}
+
+.NavbarRight{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.NavbarLeft{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
