@@ -8,6 +8,12 @@ body {
     margin-top: 55px;
 }
 
+@media (max-width: 449px) {
+    body {
+        margin-top: 75px;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
