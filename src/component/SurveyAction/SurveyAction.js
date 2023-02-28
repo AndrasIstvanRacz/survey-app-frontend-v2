@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const baseURL = 'https://survey-app-backend-deik.herokuapp.com'
+const baseURL = 'https://survey-app-backend-deik.herokuapp.com';
 
 export async function getSurveysData() {
-  return await axios.get(baseURL + '/survey/findAllVisible',);
+  return await axios.get(baseURL + '/survey/findAllVisible');
 }
 
 export async function getSurveysDataByUser(token) {
@@ -11,7 +11,7 @@ export async function getSurveysDataByUser(token) {
     {
       headers:
         {
-          Authorization: "Bearer " + token
+          Authorization: "Bearer " + token,
         }
     })
 }
@@ -26,7 +26,7 @@ export async function addNewSurvey(title, description, visibility, questions, to
     }, {
       headers:
         {
-          Authorization: "Bearer " + token
+          Authorization: "Bearer " + token,
         }
     })
 }

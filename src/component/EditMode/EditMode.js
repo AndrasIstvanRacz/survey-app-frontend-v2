@@ -21,24 +21,26 @@ class EditMode extends React.Component {
       id: props.params.id,
       title: "",
       error: false,
+      loading: true,
       token: getCookie("userSession"),
       survey: [],
 
     }
   }
 
-  componentDidMount() {
-    this.setState({token: getCookie("userSession")})
+  getUserSurveys = () => {
     getSurveyByIdWithAuth(this.state.token, this.state.id).then(r => {
       const survey = r.data;
       this.setState({
         survey: survey,
         title: survey.title,
         error: false,
+        loading: false
       })
     }).catch(r => {
       this.setState({
-        error: true
+        error: true,
+        loading: false
       })
     })
   }
@@ -54,7 +56,8 @@ class EditMode extends React.Component {
       },
     });
 
-    if (this.state.title === "" && !this.state.error) {
+    if (this.state.loading) {
+      this.getUserSurveys();
       return (
         <div className="Container">
           <div className='ProgressBar'>

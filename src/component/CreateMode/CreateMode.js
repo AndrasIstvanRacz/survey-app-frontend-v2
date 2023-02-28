@@ -31,7 +31,6 @@ class CreateMode extends React.Component {
   }
 
   render() {
-    console.log(this.state.newQuestions)
     const theme = createTheme({
       typography: {
         fontFamily: [

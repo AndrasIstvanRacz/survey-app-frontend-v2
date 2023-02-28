@@ -12,17 +12,14 @@ class Home extends Component{
     super();
     this.state = {
       surveys: [],
-      error: false
+      error: false,
+      loading: true,
     }
   }
 
-  componentDidMount() {
-    this.getSurveys();
-  };
-
-
   render() {
-    if (this.state.surveys === [] && !this.state.error) {
+    if (this.state.loading) {
+      this.getSurveys()
       return (
         <div className="Container">
           <div className='ProgressBar'>
@@ -52,11 +49,12 @@ class Home extends Component{
       .then(response => {
         this.setState({
           surveys: response.data,
-          error: false
+          error: false,
+          loading: false,
         })
       })
       .catch(r => {
-        this.setState({error: true})
+        this.setState({error: true,loading: false,})
       });
   }
 

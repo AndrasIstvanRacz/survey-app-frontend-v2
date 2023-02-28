@@ -18,30 +18,33 @@ class StatisticsMode extends React.Component{
       visibility: null,
       questions: [],
       error: false,
+      loading: true,
       guest: true,
       survey: [],
       token: getCookie("userSession")
     }
   }
 
-  componentDidMount() {
+  getSurveyByIdWithAuthForStats = () => {
     getSurveyByIdWithAuth(this.state.token, this.state.id).then(r => {
       const survey = r.data;
       this.setState({
         survey: survey,
         title: survey.title,
         error: false,
+        loading: false,
       })
     }).catch(r => {
       this.setState({
-        error: true
+        error: true,
+        loading: false,
       })
     })
   }
 
   render() {
-    console.log(this.state.survey)
-    if (this.state.title === "" && !this.state.error) {
+    if (this.state.loading) {
+      this.getSurveyByIdWithAuthForStats()
       return (
         <div className="Container">
           <div className='ProgressBar'>
@@ -65,7 +68,7 @@ class StatisticsMode extends React.Component{
             <a
               className="ShareLink"
               href={"/view/share/" + this.state.survey.survey_id}>
-              {/*"https://survey-app-frontend.vercel.app*/"http://localhost:3000/view/share/" + this.state.survey.survey_id}
+              {"https://survey-app-frontend-v2-1ez3.vercel.app/view/share/" + this.state.survey.survey_id}
             </a>}
           <p className='StatDescription'>{this.state.survey.description}</p>
 
